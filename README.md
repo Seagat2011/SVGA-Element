@@ -1,5 +1,5 @@
 # SVGA-Element
-Scale-invariant (Fractal) Vector Graphics Array Element textures for IMAX video games
+Scale-invariant (Fractal) Vector Graphics Array Elements for IMAX video games
 
 ## Example  
 
