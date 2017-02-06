@@ -15,7 +15,7 @@ Scale-invariant (Fractal) Vector Graphics Array Elements for IMAX video games
       .  
    })  
 
-2. class.APIs.property.attribute[.dimensional_units .. (optional)].number_system // done for documentation purposes //  
+2. class.APIs.property.attribute[.dimensional_units .. (optional)].number_system // for documentation purposes //  
 
 
 //OPTION 1:Performance  
