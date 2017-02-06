@@ -106,4 +106,4 @@ bladeGrass.Update({
 NOTES   
 
 -n-elements require log2N channels of communication per commit-frame (what about logFactorialN)  
--messages are only posted for Listeners  
+-messages are only posted to Listeners  
