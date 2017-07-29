@@ -39,14 +39,14 @@ bladeGrass.Init();
 
 //OPTION 2:Direct Init  
 var fertileEarth = new Object["SVGA-element"].SURFACE.SOIL.FERTILE();  
-fertileEarth.Init({  
+fertileEarth.Init([  
   "soil.humidity.percent.float":80,  
   "soil.ph.float":7.0,  
   "light.direction.cm.vector._3.float":[0,2,4]  
-});
+]);
 
 var bladeGrass = new Object["SVGA-element"].SURFACE.GRASS.KENTUCKY();  
-bladeGrass.Init({   
+bladeGrass.Init([   
   "wind.direction.cm.vector._3.float":[0,3,0],  
   "wind.velocity.mph.vector._3.float":12,  
   "light.direction.cm.vector._3.float":1,  
@@ -55,7 +55,7 @@ bladeGrass.Init({
   "soil.dampness.float":1,  
   "soil.humidity.percent.float":1,  
   "soil.ph.float":2  
-});  
+]);  
 
 
 //OPTION 3:Add listeners  
@@ -64,13 +64,13 @@ fertileEarth["soil.humidity.percent.float"] = 80;
 fertileEarth["soil.ph.float"] = 7.0;  
 fertileEarth["light.direction.cm.vector._3.float"] = [0,2,4];  
 fertileEarth.Init()
-fertileEarth.Update({  
+fertileEarth.Update([  
   "soil.humidity.percent.float",  
   "soil.ph.float",  
   "light.direction.cm.vector._3.float",  
   "surface.grass.kentucky.nearest.neighbor.mm.float",  
   "surface.soil.fertile.nearest.neighbor.cm.float"  
-});  
+]);  
 
 var bladeGrass = new Object["SVGA-element"].SURFACE.GRASS.KENTUCKY();   
 bladeGrass["wind.direction.cm.vector._3.float"] = [0,3,0];  
@@ -82,7 +82,7 @@ bladeGrass["soil.dampness.float"] = 1;
 bladeGrass["soil.humidity.percent.float"] = 1;  
 bladeGrass["soil.ph.float"] = 2;
 bladeGrass.Init();  
-bladeGrass.Update({   
+bladeGrass.Update([   
   "wind.direction.cm.vector._3.float",  
   "wind.velocity.mph.vector._3.float",  
   "light.direction.cm.vector._3.float",  
@@ -93,7 +93,7 @@ bladeGrass.Update({
   "soil.ph.float",  
   "surface.grass.kentucky.nearest.neighbor.mm.float",  
   "surface.soil.fertile.nearest.neighbor.cm.float"  
-});
+]);
 
 
 //OPTION 4:Documentation Purposes
