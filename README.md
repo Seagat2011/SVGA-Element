@@ -37,7 +37,7 @@ bladeGrass["soil.ph.float"] = 2;
 bladeGrass.Init();  
 
 
-//OPTION 2:Direct Initialize  
+//OPTION 2:Direct Init  
 var fertileEarth = new Object["SVGA-element"].SURFACE.SOIL.FERTILE();  
 fertileEarth.Init({  
   "soil.humidity.percent.float":80,  
