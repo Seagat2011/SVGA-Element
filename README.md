@@ -82,7 +82,7 @@ bladeGrass["soil.dampness.float"] = 1;
 bladeGrass["soil.humidity.percent.float"] = 1;  
 bladeGrass["soil.ph.float"] = 2;
 bladeGrass.Init();  
-bladeGrass.Update([   
+bladeGrass.Update({   
   "wind.direction.cm.vector._3.float":wind_direction_callback_func,  
   "wind.velocity.mph.vector._3.float":wind_velocity_callback_func,  
   "light.direction.cm.vector._3.float":light_direction_callback_func,  
@@ -93,7 +93,7 @@ bladeGrass.Update([
   "soil.ph.float":soil_ph_callback_func,  
   "surface.grass.kentucky.nearest.neighbor.mm.float":surface_grass_callback_func,  
   "surface.soil.fertile.nearest.neighbor.cm.float":surface_soil_callback_func  
-]);
+});
 
 
 //OPTION 4:Documentation Purposes
