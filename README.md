@@ -9,11 +9,11 @@ Scale-invariant (Fractal) Vector Graphics Array Elements for IMAX video games
     .  
     .  
 
-1b. class.Update({  
-     "property.attribute[.dimensional_units .. (optional)].number_system" : value,  
+1b. class.Update([  
+     "property.attribute[.dimensional_units .. (optional)].number_system",  
       .  
       .  
-   })  
+   ])  
 
 2. class.APIs.property.attribute[.dimensional_units .. (optional)].number_system // for documentation purposes //  
 
