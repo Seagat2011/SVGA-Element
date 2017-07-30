@@ -110,7 +110,7 @@ console.log( bladeGrass.light.distance.cm.vector._3.float ); // true
 console.log( bladeGrass.light.intensity.lumins.vector._3.float ); // true
 console.log( bladeGrass.soil.dampness.float ); // true
 console.log( bladeGrass.soil.humidity.percent.float ); // true
-console.log( bladeGrass.soil.ph.millimeters ) // false;
+console.log( bladeGrass.soil.ph.millimeters ); // Error;
 console.log( JSON.stringify( bladeGrass.soil.ph ) ); // { float:true }
 ```  
 
