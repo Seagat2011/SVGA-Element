@@ -9,11 +9,11 @@ Scale-invariant (Fractal) Vector Graphics Array Elements for IMAX video games
     .  
     .  
 
-1b. class.Update([  
-     "property.attribute[.dimensional_units .. (optional)].number_system",  
+1b. class.Update({  
+     "property.attribute[.dimensional_units .. (optional)].number_system":callback,  
       .  
       .  
-   ])  
+   })  
 
 2. class.APIs.property.attribute[.dimensional_units .. (optional)].number_system // for documentation purposes //  
 
@@ -64,13 +64,13 @@ fertileEarth["soil.humidity.percent.float"] = 80;
 fertileEarth["soil.ph.float"] = 7.0;  
 fertileEarth["light.direction.cm.vector._3.float"] = [0,2,4];  
 fertileEarth.Init()
-fertileEarth.Update([  
-  "soil.humidity.percent.float",  
-  "soil.ph.float",  
-  "light.direction.cm.vector._3.float",  
-  "surface.grass.kentucky.nearest.neighbor.mm.float",  
-  "surface.soil.fertile.nearest.neighbor.cm.float"  
-]);  
+fertileEarth.Update({  
+  "soil.humidity.percent.float":soil_humidity_callback_func,  
+  "soil.ph.float":soil_ph_callback_func,  
+  "light.direction.cm.vector._3.float":light_direction_callback_func,  
+  "surface.grass.kentucky.nearest.neighbor.mm.float":surface_grass_callback_func,  
+  "surface.soil.fertile.nearest.neighbor.cm.float":surface_soil_callback_func  
+});  
 
 var bladeGrass = new Object["SVGA-element"].SURFACE.GRASS.KENTUCKY();   
 bladeGrass["wind.direction.cm.vector._3.float"] = [0,3,0];  
@@ -83,16 +83,16 @@ bladeGrass["soil.humidity.percent.float"] = 1;
 bladeGrass["soil.ph.float"] = 2;
 bladeGrass.Init();  
 bladeGrass.Update([   
-  "wind.direction.cm.vector._3.float",  
-  "wind.velocity.mph.vector._3.float",  
-  "light.direction.cm.vector._3.float",  
-  "light.distance.cm.vector._3.float",  
-  "light.intensity.lumins.vector._3.float",  
-  "soil.dampness.float",  
-  "soil.humidity.percent.float",  
-  "soil.ph.float",  
-  "surface.grass.kentucky.nearest.neighbor.mm.float",  
-  "surface.soil.fertile.nearest.neighbor.cm.float"  
+  "wind.direction.cm.vector._3.float":wind_direction_callback_func,  
+  "wind.velocity.mph.vector._3.float":wind_velocity_callback_func,  
+  "light.direction.cm.vector._3.float":light_direction_callback_func,  
+  "light.distance.cm.vector._3.float":light_distance_callback_func,  
+  "light.intensity.lumins.vector._3.float":light_intensity_callback_func,  
+  "soil.dampness.float":soil_dampness_callback_func,  
+  "soil.humidity.percent.float":soil_humidty_callback_func,  
+  "soil.ph.float":soil_ph_callback_func,  
+  "surface.grass.kentucky.nearest.neighbor.mm.float":surface_grass_callback_func,  
+  "surface.soil.fertile.nearest.neighbor.cm.float":surface_soil_callback_func  
 ]);
 
 
